@@ -7,13 +7,7 @@
 <script>
   import mTabbarItem from './tabbar-item'
   export default {
-    props: ['value'],
-    computed: {
-    	value () {
-    		//返回当前路由值
-    		return this.$route.matched[0].name
-    	}
-    }
+    props: ['value']
   }
 </script>
 
@@ -25,10 +19,9 @@
   	bottom: 0;
   	left: 0;
   	right: 0;
-  	width: 100%;
   	overflow: hidden;
   	height: 50px;
-  	background: #fff;
-  	border-top: 1px solid #e4e4e4;
+  	background: #FFFFFF;
+  	border: 1px solid #E4E4E4;
   }
 </style>

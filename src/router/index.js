@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Index from '../pages/Index/index'
+import Index from '../pages/Index/Index'
 import Broadcast from '../pages/Broadcast/Broadcast'
 import AudioBook from '../pages/AudioBook/AudioBook'
 import Group from '../pages/Group/Group'
@@ -16,22 +16,22 @@ export default new Router({
       component: Index
     },
     {
-      path: '/Broadcast',
+      path: '/broadcast',
       name: 'Broadcast',
       component: Broadcast
     },
     {
-      path: '/AudioBook',
+      path: '/audioBook',
       name: 'AudioBook',
       component: AudioBook
     },
     {
-      path: '/Group',
+      path: '/group',
       name: 'Group',
       component: Group
     },
     {
-      path: '/Mine',
+      path: '/mine',
       name: 'Mine',
       component: Mine
     },

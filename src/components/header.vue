@@ -1,6 +1,6 @@
 <template>
   <header class="m-header" :class="{'is-bg': bg, 'is-fixed': fixed}">
-    <div class="m-header-burron is-left">
+    <div class="m-header-button is-left">
       <slot name="left"></slot>
     </div>
     <h1 class="m-header-title" v-text="title"></h1>
@@ -13,50 +13,50 @@
 <script>
   export default {
     props: {
-      title: {
-        type: String,
-        default: ''
-      },
-      bg: {
-        type: Boolean,
-        default: false
-      },
-      fixed: {
-        type: Boolean,
-        default: false
-      }
+    	title: {
+    	  type: String,
+    	  default: ''
+    	},
+    	bg: {
+    	  type: Boolean,
+    	  default: false
+    	},
+    	fixed: {
+    	  type: Boolean,
+    	  default: false
+    	}
     }
   }
 </script>
 
 <style lang="less">
-	/*导入颜色变量*/
   @import '../assets/less/var.less';
   .m-header {
     display: flex;
     align-items: center;
     height: 44px;
     padding: 0 10px;
+    background: #FFFFFF;
     color: @headerDefaultColor;
     border-bottom: 1px solid #eee;
     a {
-    	color: @headerDefaultColor;
+      color: @headerDefaultColor;
     }
     .m-header-button {
       width: 70px;
       align-items: stretch;
-      &.is-left {
-        text-align: left;
-      }
       &.is-right {
         text-align: right;
       }
+      &.is-left {
+        text-align: left;
+      }
       .m-icon-img {
-        width: 20px;
-        height: 20px;
+      	width: 20px;
+      	height: 20px;
       }
       .margin-right-10 {
-        margin-right: 10px;
+      	margin-right: 10px;
       }
     }
     .m-header-title {
@@ -69,18 +69,16 @@
     }
     &.is-bg {
       background: @headerBg;
-      color: #FFF;
-      a {color: #fff;}
-      .m-header-title {
-        color: #fff;
-      }
+      color: #FFFFFF;
+      a {color: #FFFFFF;}
+      .m-header-title {color: #FFFFFF;}
     }
     &.is-fixed {
-    	position: fixed;
-    	left: 0;
-    	right: 0;
-    	top: 0;
-    	z-index: 9;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      z-index: 9;
     }
   }
 </style>
